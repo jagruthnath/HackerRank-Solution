@@ -1,1 +1,1 @@
-select round(SQRT(POW(MIN(LAT_N) - MIN(LONG_W), 2) + POW(MAX(LAT_N) - MAX(LONG_W), 2)), 4) from STATION;
+select round(SQRT(POW(MAX(LONG_W) - MIN(LONG_W), 2) + POW(MAX(LAT_N) - MIN(LAT_N), 2)), 4) from STATION;
